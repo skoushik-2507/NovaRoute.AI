@@ -1,0 +1,12 @@
+# --- Vehicle detection & tracking (YOLO + ByteTrack) ---
+ultralytics>=8.2.0        # YOLOv8 model + built-in ByteTrack tracker
+opencv-python>=4.9.0      # video I/O, frame handling, drawing
+
+# --- Core numerics / config ---
+numpy>=1.26.0
+pyyaml>=6.0                # load ml/config/config.yaml
+
+# --- Testing ---
+pytest>=8.0.0
+# JSON contract validation
+jsonschema>=4.21.0

@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Data & model weights (don't commit large binaries)
+ml/data/raw/*
+ml/data/processed/*
+ml/data/test_videos/*
+!ml/data/raw/.gitkeep
+!ml/data/processed/.gitkeep
+!ml/data/test_videos/.gitkeep
+ml/models/*.pt
+ml/models/*.onnx
+
+# Outputs
+ml/outputs/detections/*
+ml/outputs/tracking/*
+ml/outputs/metrics/*
+!ml/outputs/detections/.gitkeep
+!ml/outputs/tracking/.gitkeep
+!ml/outputs/metrics/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Env
+.env

@@ -1,0 +1,10 @@
+{
+  "description": "Transform Figma designs into functional React applications, enabling developers to streamline their workflow and accelerate project delivery.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

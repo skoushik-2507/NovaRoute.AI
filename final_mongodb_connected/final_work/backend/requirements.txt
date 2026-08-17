@@ -1,0 +1,11 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pymongo>=4.8
+pydantic>=2.8
+networkx>=3.3
+osmnx>=1.9.4
+pandas>=2.2.2
+numpy>=1.26.4
+geopandas>=0.14.4
+shapely>=2.0.4
+scikit-learn>=1.4.0

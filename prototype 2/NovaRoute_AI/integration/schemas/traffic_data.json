@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://novaroute.ai/schemas/traffic_data.json",
+  "title": "NovaRouteTrafficObservation",
+  "description": "Integration contract from the ML pipeline to the road-network/Dijkstra layer. Vehicle counts are rolling average active tracked vehicles per frame; road_capacity is the calibrated concurrent vehicle capacity of the camera's effective observation area.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "road_segment_id",
+    "timestamp",
+    "observation_window_seconds",
+    "vehicle_counts",
+    "total_vehicles",
+    "peak_vehicles",
+    "road_capacity",
+    "traffic_density",
+    "congestion_level",
+    "congestion_factor",
+    "aggregation_method",
+    "risk_score",
+    "risk_level",
+    "risk_factor_scores",
+    "risk_contributions"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.1.0"},
+    "road_segment_id": {"type": "string", "minLength": 1},
+    "osm_edge": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["u", "v"],
+      "properties": {
+        "u": {"type": "integer"},
+        "v": {"type": "integer"},
+        "key": {"type": "integer", "minimum": 0}
+      }
+    },
+    "timestamp": {"type": "string", "format": "date-time"},
+    "observation_window_seconds": {"type": "number", "exclusiveMinimum": 0},
+    "vehicle_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["car", "motorcycle", "bus", "truck", "total"],
+      "properties": {
+        "car": {"type": "integer", "minimum": 0},
+        "motorcycle": {"type": "integer", "minimum": 0},
+        "bus": {"type": "integer", "minimum": 0},
+        "truck": {"type": "integer", "minimum": 0},
+        "total": {"type": "integer", "minimum": 0}
+      }
+    },
+    "total_vehicles": {"type": "integer", "minimum": 0},
+    "peak_vehicles": {"type": "integer", "minimum": 0},
+    "road_capacity": {"type": "number", "exclusiveMinimum": 0},
+    "traffic_density": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Concurrent active vehicles divided by calibrated concurrent vehicle capacity (V/C ratio)."
+    },
+    "congestion_level": {
+      "type": "string",
+      "enum": ["free_flow", "moderate", "heavy", "severe"]
+    },
+    "congestion_factor": {"type": "number", "minimum": 1.0},
+    "aggregation_method": {
+      "type": "string",
+      "const": "average_active_vehicles"
+    },
+    "risk_score": {"type": "number", "minimum": 0, "maximum": 100},
+    "risk_level": {
+      "type": "string",
+      "enum": ["low", "moderate", "high", "critical"]
+    },
+    "risk_factor_scores": {
+      "$ref": "#/$defs/factorScores"
+    },
+    "risk_contributions": {
+      "$ref": "#/$defs/contributions"
+    }
+  },
+  "$defs": {
+    "factorScores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["accident_history", "traffic_density", "pedestrian_conflict", "time_of_day"],
+      "properties": {
+        "accident_history": {"type": "number", "minimum": 0, "maximum": 1},
+        "traffic_density": {"type": "number", "minimum": 0, "maximum": 1},
+        "pedestrian_conflict": {"type": "number", "minimum": 0, "maximum": 1},
+        "time_of_day": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "contributions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["accident_history", "traffic_density", "pedestrian_conflict", "time_of_day"],
+      "properties": {
+        "accident_history": {"type": "number", "minimum": 0},
+        "traffic_density": {"type": "number", "minimum": 0},
+        "pedestrian_conflict": {"type": "number", "minimum": 0},
+        "time_of_day": {"type": "number", "minimum": 0}
+      }
+    }
+  },
+  "examples": [
+    {
+      "schema_version": "1.1.0",
+      "road_segment_id": "junction_1",
+      "osm_edge": null,
+      "timestamp": "2026-08-16T12:00:00+00:00",
+      "observation_window_seconds": 1.2,
+      "vehicle_counts": {"car": 18, "motorcycle": 7, "bus": 1, "truck": 2, "total": 28},
+      "total_vehicles": 28,
+      "peak_vehicles": 33,
+      "road_capacity": 50.0,
+      "traffic_density": 0.56,
+      "congestion_level": "moderate",
+      "congestion_factor": 1.01475,
+      "aggregation_method": "average_active_vehicles",
+      "risk_score": 49.25,
+      "risk_level": "moderate",
+      "risk_factor_scores": {"accident_history": 0.3, "traffic_density": 0.3733333333, "pedestrian_conflict": 0.2, "time_of_day": 0.75},
+      "risk_contributions": {"accident_history": 10.5, "traffic_density": 9.3333333333, "pedestrian_conflict": 5.0, "time_of_day": 11.25}
+    }
+  ]
+}

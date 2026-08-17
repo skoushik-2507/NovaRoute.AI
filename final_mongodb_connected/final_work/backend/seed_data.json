@@ -1,0 +1,672 @@
+{
+  "junctions": [
+    {
+      "id": "J001",
+      "name": "Sitabuldi Intersection",
+      "shortName": "Sitabuldi",
+      "latitude": 21.1498,
+      "longitude": 79.0806,
+      "riskScore": 78,
+      "riskLevel": "HIGH",
+      "factors": {
+        "accident": 28,
+        "traffic": 22,
+        "pedestrian": 18,
+        "timeOfDay": 10
+      },
+      "congestionFactor": 1.54,
+      "assignedOfficer": "OFF001"
+    },
+    {
+      "id": "J002",
+      "name": "Itwari Station Square",
+      "shortName": "Itwari",
+      "latitude": 21.153,
+      "longitude": 79.0731,
+      "riskScore": 88,
+      "riskLevel": "CRITICAL",
+      "factors": {
+        "accident": 35,
+        "traffic": 25,
+        "pedestrian": 20,
+        "timeOfDay": 8
+      },
+      "congestionFactor": 1.76,
+      "assignedOfficer": "OFF002"
+    },
+    {
+      "id": "J003",
+      "name": "Wardha Road \u2013 Katol Crossing",
+      "shortName": "Wardha\u2013Katol",
+      "latitude": 21.129,
+      "longitude": 79.1053,
+      "riskScore": 76,
+      "riskLevel": "HIGH",
+      "factors": {
+        "accident": 26,
+        "traffic": 24,
+        "pedestrian": 16,
+        "timeOfDay": 10
+      },
+      "congestionFactor": 1.48,
+      "assignedOfficer": "OFF003"
+    },
+    {
+      "id": "J004",
+      "name": "Kamptee Road Junction",
+      "shortName": "Kamptee Rd",
+      "latitude": 21.1648,
+      "longitude": 79.1048,
+      "riskScore": 65,
+      "riskLevel": "HIGH",
+      "factors": {
+        "accident": 22,
+        "traffic": 20,
+        "pedestrian": 14,
+        "timeOfDay": 9
+      },
+      "congestionFactor": 1.32,
+      "assignedOfficer": "OFF004"
+    },
+    {
+      "id": "J005",
+      "name": "Subhash Road \u2013 Ganesh Peth",
+      "shortName": "Subhash Rd",
+      "latitude": 21.1469,
+      "longitude": 79.0775,
+      "riskScore": 45,
+      "riskLevel": "MEDIUM",
+      "factors": {
+        "accident": 14,
+        "traffic": 16,
+        "pedestrian": 10,
+        "timeOfDay": 5
+      },
+      "congestionFactor": 1.14,
+      "assignedOfficer": "OFF005"
+    },
+    {
+      "id": "J006",
+      "name": "Hingna Road Junction",
+      "shortName": "Hingna Rd",
+      "latitude": 21.0996,
+      "longitude": 79.0403,
+      "riskScore": 52,
+      "riskLevel": "MEDIUM",
+      "factors": {
+        "accident": 18,
+        "traffic": 14,
+        "pedestrian": 12,
+        "timeOfDay": 8
+      },
+      "congestionFactor": 1.22,
+      "assignedOfficer": "OFF006"
+    },
+    {
+      "id": "J007",
+      "name": "Wardha Road Junction",
+      "shortName": "Wardha Rd",
+      "latitude": 21.1458,
+      "longitude": 79.0882,
+      "riskScore": 92,
+      "riskLevel": "CRITICAL",
+      "factors": {
+        "accident": 32,
+        "traffic": 27,
+        "pedestrian": 21,
+        "timeOfDay": 12
+      },
+      "congestionFactor": 1.82,
+      "assignedOfficer": "OFF007"
+    },
+    {
+      "id": "J008",
+      "name": "Amravati Road Junction",
+      "shortName": "Amravati Rd",
+      "latitude": 21.1665,
+      "longitude": 79.0627,
+      "riskScore": 55,
+      "riskLevel": "MEDIUM",
+      "factors": {
+        "accident": 18,
+        "traffic": 16,
+        "pedestrian": 13,
+        "timeOfDay": 8
+      },
+      "congestionFactor": 1.24,
+      "assignedOfficer": "OFF008"
+    },
+    {
+      "id": "J009",
+      "name": "Narendra Nagar Square",
+      "shortName": "Narendra Ngr",
+      "latitude": 21.1358,
+      "longitude": 79.065,
+      "riskScore": 38,
+      "riskLevel": "MEDIUM",
+      "factors": {
+        "accident": 12,
+        "traffic": 12,
+        "pedestrian": 8,
+        "timeOfDay": 6
+      },
+      "congestionFactor": 1.08,
+      "assignedOfficer": null
+    },
+    {
+      "id": "J010",
+      "name": "MIDC Hingna Chowk",
+      "shortName": "MIDC Hingna",
+      "latitude": 21.1055,
+      "longitude": 79.0255,
+      "riskScore": 28,
+      "riskLevel": "LOW",
+      "factors": {
+        "accident": 8,
+        "traffic": 8,
+        "pedestrian": 6,
+        "timeOfDay": 6
+      },
+      "congestionFactor": 1.04,
+      "assignedOfficer": null
+    },
+    {
+      "id": "J011",
+      "name": "Airport Road Junction",
+      "shortName": "Airport Rd",
+      "latitude": 21.0924,
+      "longitude": 79.0567,
+      "riskScore": 43,
+      "riskLevel": "MEDIUM",
+      "factors": {
+        "accident": 14,
+        "traffic": 14,
+        "pedestrian": 9,
+        "timeOfDay": 6
+      },
+      "congestionFactor": 1.12,
+      "assignedOfficer": null
+    },
+    {
+      "id": "J012",
+      "name": "Koradi Road Crossing",
+      "shortName": "Koradi Rd",
+      "latitude": 21.1793,
+      "longitude": 79.1063,
+      "riskScore": 67,
+      "riskLevel": "HIGH",
+      "factors": {
+        "accident": 24,
+        "traffic": 20,
+        "pedestrian": 15,
+        "timeOfDay": 8
+      },
+      "congestionFactor": 1.36,
+      "assignedOfficer": "OFF009"
+    },
+    {
+      "id": "J013",
+      "name": "Umrer Road Junction",
+      "shortName": "Umrer Rd",
+      "latitude": 21.1116,
+      "longitude": 79.1032,
+      "riskScore": 58,
+      "riskLevel": "MEDIUM",
+      "factors": {
+        "accident": 20,
+        "traffic": 16,
+        "pedestrian": 14,
+        "timeOfDay": 8
+      },
+      "congestionFactor": 1.26,
+      "assignedOfficer": null
+    },
+    {
+      "id": "J014",
+      "name": "Ring Road \u2013 Mankapur",
+      "shortName": "Mankapur",
+      "latitude": 21.1158,
+      "longitude": 79.0482,
+      "riskScore": 71,
+      "riskLevel": "HIGH",
+      "factors": {
+        "accident": 26,
+        "traffic": 22,
+        "pedestrian": 14,
+        "timeOfDay": 9
+      },
+      "congestionFactor": 1.42,
+      "assignedOfficer": null
+    },
+    {
+      "id": "J015",
+      "name": "Chhatrapati Square",
+      "shortName": "Chhatrapati Sq",
+      "latitude": 21.1514,
+      "longitude": 79.0853,
+      "riskScore": 35,
+      "riskLevel": "MEDIUM",
+      "factors": {
+        "accident": 10,
+        "traffic": 12,
+        "pedestrian": 8,
+        "timeOfDay": 5
+      },
+      "congestionFactor": 1.07,
+      "assignedOfficer": null
+    },
+    {
+      "id": "J016",
+      "name": "Dharampeth T-Junction",
+      "shortName": "Dharampeth",
+      "latitude": 21.142,
+      "longitude": 79.0756,
+      "riskScore": 48,
+      "riskLevel": "MEDIUM",
+      "factors": {
+        "accident": 16,
+        "traffic": 14,
+        "pedestrian": 11,
+        "timeOfDay": 7
+      },
+      "congestionFactor": 1.16,
+      "assignedOfficer": "OFF010"
+    },
+    {
+      "id": "J017",
+      "name": "Cotton Market Square",
+      "shortName": "Cotton Mkt",
+      "latitude": 21.156,
+      "longitude": 79.0832,
+      "riskScore": 82,
+      "riskLevel": "CRITICAL",
+      "factors": {
+        "accident": 30,
+        "traffic": 24,
+        "pedestrian": 20,
+        "timeOfDay": 8
+      },
+      "congestionFactor": 1.64,
+      "assignedOfficer": null
+    },
+    {
+      "id": "J018",
+      "name": "VNIT T-Junction",
+      "shortName": "VNIT",
+      "latitude": 21.1325,
+      "longitude": 79.0514,
+      "riskScore": 42,
+      "riskLevel": "MEDIUM",
+      "factors": {
+        "accident": 14,
+        "traffic": 13,
+        "pedestrian": 9,
+        "timeOfDay": 6
+      },
+      "congestionFactor": 1.1,
+      "assignedOfficer": null
+    },
+    {
+      "id": "J019",
+      "name": "Sadar Square",
+      "shortName": "Sadar Sq",
+      "latitude": 21.158,
+      "longitude": 79.0907,
+      "riskScore": 74,
+      "riskLevel": "HIGH",
+      "factors": {
+        "accident": 26,
+        "traffic": 22,
+        "pedestrian": 16,
+        "timeOfDay": 10
+      },
+      "congestionFactor": 1.45,
+      "assignedOfficer": null
+    },
+    {
+      "id": "J020",
+      "name": "Gandhi Sagar Road",
+      "shortName": "Gandhi Sgr",
+      "latitude": 21.1695,
+      "longitude": 79.0832,
+      "riskScore": 30,
+      "riskLevel": "LOW",
+      "factors": {
+        "accident": 10,
+        "traffic": 10,
+        "pedestrian": 6,
+        "timeOfDay": 4
+      },
+      "congestionFactor": 1.05,
+      "assignedOfficer": null
+    }
+  ],
+  "officers": [
+    {
+      "id": "OFF001",
+      "name": "Officer Sharma",
+      "badge": "OFF-01",
+      "latitude": 21.151,
+      "longitude": 79.079,
+      "status": "AVAILABLE",
+      "locationName": "Sitabuldi",
+      "assignedJunction": "J001",
+      "responseTime": 3.8,
+      "distanceKm": 2.9,
+      "locked": false
+    },
+    {
+      "id": "OFF002",
+      "name": "Officer Patel",
+      "badge": "OFF-02",
+      "latitude": 21.1555,
+      "longitude": 79.071,
+      "status": "AVAILABLE",
+      "locationName": "Itwari Depot",
+      "assignedJunction": "J002",
+      "responseTime": 4.1,
+      "distanceKm": 3.2,
+      "locked": false
+    },
+    {
+      "id": "OFF003",
+      "name": "Officer Deshmukh",
+      "badge": "OFF-03",
+      "latitude": 21.127,
+      "longitude": 79.107,
+      "status": "ASSIGNED",
+      "locationName": "Wardha Road Beat",
+      "assignedJunction": "J003",
+      "responseTime": 3.6,
+      "distanceKm": 2.7,
+      "locked": false
+    },
+    {
+      "id": "OFF004",
+      "name": "Officer Kulkarni",
+      "badge": "OFF-04",
+      "latitude": 21.167,
+      "longitude": 79.103,
+      "status": "LOCKED",
+      "locationName": "Kamptee Outpost",
+      "assignedJunction": "J004",
+      "responseTime": 6.0,
+      "distanceKm": 4.8,
+      "locked": true
+    },
+    {
+      "id": "OFF005",
+      "name": "Officer Thakur",
+      "badge": "OFF-05",
+      "latitude": 21.1488,
+      "longitude": 79.076,
+      "status": "AVAILABLE",
+      "locationName": "Ganesh Peth",
+      "assignedJunction": "J005",
+      "responseTime": 2.9,
+      "distanceKm": 2.2,
+      "locked": false
+    },
+    {
+      "id": "OFF006",
+      "name": "Officer Mishra",
+      "badge": "OFF-06",
+      "latitude": 21.102,
+      "longitude": 79.042,
+      "status": "AVAILABLE",
+      "locationName": "Hingna Post",
+      "assignedJunction": "J006",
+      "responseTime": 4.5,
+      "distanceKm": 3.5,
+      "locked": false
+    },
+    {
+      "id": "OFF007",
+      "name": "Officer Joshi",
+      "badge": "OFF-07",
+      "latitude": 21.144,
+      "longitude": 79.086,
+      "status": "ASSIGNED",
+      "locationName": "Wardha Junction",
+      "assignedJunction": "J007",
+      "responseTime": 4.2,
+      "distanceKm": 3.7,
+      "locked": false
+    },
+    {
+      "id": "OFF008",
+      "name": "Officer Yadav",
+      "badge": "OFF-08",
+      "latitude": 21.168,
+      "longitude": 79.061,
+      "status": "AVAILABLE",
+      "locationName": "Amravati Circle",
+      "assignedJunction": "J008",
+      "responseTime": 3.2,
+      "distanceKm": 2.4,
+      "locked": false
+    },
+    {
+      "id": "OFF009",
+      "name": "Officer Bane",
+      "badge": "OFF-09",
+      "latitude": 21.18,
+      "longitude": 79.1045,
+      "status": "ASSIGNED",
+      "locationName": "Koradi Outpost",
+      "assignedJunction": "J012",
+      "responseTime": 5.1,
+      "distanceKm": 4.1,
+      "locked": false
+    },
+    {
+      "id": "OFF010",
+      "name": "Officer Singh",
+      "badge": "OFF-10",
+      "latitude": 21.1435,
+      "longitude": 79.074,
+      "status": "AVAILABLE",
+      "locationName": "Dharampeth Beat",
+      "assignedJunction": "J016",
+      "responseTime": 3.4,
+      "distanceKm": 2.6,
+      "locked": false
+    },
+    {
+      "id": "OFF011",
+      "name": "Officer Wagh",
+      "badge": "OFF-11",
+      "latitude": 21.16,
+      "longitude": 79.095,
+      "status": "OFFLINE",
+      "locationName": "Control Room",
+      "assignedJunction": null,
+      "responseTime": null,
+      "distanceKm": null,
+      "locked": false
+    },
+    {
+      "id": "OFF012",
+      "name": "Officer Naik",
+      "badge": "OFF-12",
+      "latitude": 21.138,
+      "longitude": 79.09,
+      "status": "OFFLINE",
+      "locationName": "Control Room",
+      "assignedJunction": null,
+      "responseTime": null,
+      "distanceKm": null,
+      "locked": false
+    }
+  ],
+  "routes": [
+    {
+      "officerId": "OFF007",
+      "junctionId": "J007",
+      "responseTime": 4.2,
+      "distance": 3.7,
+      "path": [
+        [
+          21.144,
+          79.086
+        ],
+        [
+          21.1445,
+          79.0865
+        ],
+        [
+          21.145,
+          79.0872
+        ],
+        [
+          21.1458,
+          79.0882
+        ]
+      ]
+    },
+    {
+      "officerId": "OFF001",
+      "junctionId": "J001",
+      "responseTime": 3.8,
+      "distance": 2.9,
+      "path": [
+        [
+          21.151,
+          79.079
+        ],
+        [
+          21.1505,
+          79.0798
+        ],
+        [
+          21.15,
+          79.0803
+        ],
+        [
+          21.1498,
+          79.0806
+        ]
+      ]
+    },
+    {
+      "officerId": "OFF002",
+      "junctionId": "J002",
+      "responseTime": 4.1,
+      "distance": 3.2,
+      "path": [
+        [
+          21.1555,
+          79.071
+        ],
+        [
+          21.1545,
+          79.0718
+        ],
+        [
+          21.1537,
+          79.0725
+        ],
+        [
+          21.153,
+          79.0731
+        ]
+      ]
+    },
+    {
+      "officerId": "OFF003",
+      "junctionId": "J003",
+      "responseTime": 3.6,
+      "distance": 2.7,
+      "path": [
+        [
+          21.127,
+          79.107
+        ],
+        [
+          21.1275,
+          79.1065
+        ],
+        [
+          21.1282,
+          79.1058
+        ],
+        [
+          21.129,
+          79.1053
+        ]
+      ]
+    },
+    {
+      "officerId": "OFF009",
+      "junctionId": "J012",
+      "responseTime": 5.1,
+      "distance": 4.1,
+      "path": [
+        [
+          21.18,
+          79.1045
+        ],
+        [
+          21.1798,
+          79.105
+        ],
+        [
+          21.1796,
+          79.1057
+        ],
+        [
+          21.1793,
+          79.1063
+        ]
+      ]
+    }
+  ],
+  "traffic": {
+    "vehicleCount": 1284,
+    "avgDensity": 0.64,
+    "congestionLevel": "MODERATE",
+    "congestionFactor": 1.24,
+    "networkStatus": "LIVE",
+    "timestamp": "10:42:31",
+    "trend": [
+      0.52,
+      0.55,
+      0.58,
+      0.6,
+      0.61,
+      0.63,
+      0.64,
+      0.63,
+      0.65,
+      0.64
+    ]
+  },
+  "coverage": {
+    "coveragePct": 85,
+    "coveredJunctions": 17,
+    "totalJunctions": 20,
+    "thresholdMinutes": 6,
+    "avgResponse": 4.2,
+    "worstResponse": 8.1,
+    "uncoveredCount": 3,
+    "uncoveredJunctions": [
+      "J014",
+      "J019",
+      "J017"
+    ]
+  },
+  "baseline": {
+    "static": {
+      "avgResponse": 8.4,
+      "coveragePct": 48,
+      "coveredCount": 10,
+      "total": 20
+    },
+    "novaroute": {
+      "avgResponse": 4.2,
+      "coveragePct": 85,
+      "coveredCount": 17,
+      "total": 20
+    }
+  }
+}

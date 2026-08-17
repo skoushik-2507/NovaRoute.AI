@@ -1,0 +1,77 @@
+# NovaRoute.AI - central configuration
+
+detection:
+  model_weights: "yolov8n.pt"
+  confidence_threshold: 0.35
+  iou_threshold: 0.45
+  target_classes:
+    car: 2
+    motorcycle: 3
+    bus: 5
+    truck: 7
+  device: "cpu"  # use "0" for the first CUDA GPU
+
+tracking:
+  tracker_config: "bytetrack.yaml"
+  confidence_threshold: null
+  iou_threshold: null
+  device: null
+
+congestion:
+  # BPR volume-delay function: factor = 1 + alpha * (v/c)^beta
+  alpha: 0.15
+  beta: 4.0
+
+  # Concurrent vehicles the road segment can reasonably hold in the camera's
+  # effective observation area. This must be calibrated for each segment.
+  default_capacity: 50.0
+  default_capacity_by_road:
+    junction_1: 80.0
+    junction_2: 40.0
+
+  free_flow_max: 0.5
+  moderate_max: 0.8
+  heavy_max: 1.2
+  max_congestion_factor: 8.0
+
+risk:
+  weights:
+    accident_history: 0.35
+    traffic_density: 0.25
+    pedestrian_conflict: 0.25
+    time_of_day: 0.15
+
+  normalization:
+    max_accidents_for_max_risk: 10.0
+    max_density_for_max_risk: 1.5
+    max_pedestrian_for_max_risk: 50.0
+
+  # Prototype prior; replace/calibrate using Nagpur data before operational use.
+  time_of_day_risk_profile:
+    [0.20, 0.15, 0.10, 0.10, 0.15, 0.30,
+     0.55, 0.75, 0.85, 0.60, 0.45, 0.45,
+     0.50, 0.45, 0.45, 0.55, 0.70, 0.85,
+     0.80, 0.60, 0.45, 0.40, 0.35, 0.25]
+
+  risk_level_thresholds:
+    low_max: 30.0
+    moderate_max: 55.0
+    high_max: 75.0
+
+pipeline:
+  # Traffic measurements are calculated over real elapsed video time,
+  # not a fixed number of frames, so different FPS videos behave consistently.
+  observation_window_seconds: 5.0
+
+  # Emit a new ML observation every 1 second after the rolling window is ready.
+  emit_every_seconds: 1.0
+
+  # Fallback only when a video/camera does not report a valid FPS.
+  fallback_fps: 25.0
+
+io:
+  test_video: "ml/data/test_videos/traffic_video.mp4"
+  detections_out: "ml/outputs/detections"
+  tracking_out: "ml/outputs/tracking"
+  metrics_out: "ml/outputs/metrics"
+  pipeline_out: "ml/outputs/pipeline"
